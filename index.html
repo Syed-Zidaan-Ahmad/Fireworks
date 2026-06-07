@@ -1,0 +1,50 @@
+<!--Fireworks (HTML Part)-->
+<!--A Responsice PWA Fireworks app which shows amazing firework effects on the screen and can be installed on your device and it moves along with the cursor and phone movements-->
+<!--Program by Zidaan-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Fireworks by Zidaan</title>
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#000000" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<!--Body Part-->
+<body>
+    <!--Heading-->
+  <div class="heading">
+    Enjoy Zidaan's Fireworks !!!<br />
+    <span class="sub-heading">For Phones: Shake/Move/Rotate/Tilt/Tap your phone in different directions or just simply move your finger on the screen.</span><br />
+    <span class="sub-heading">For PC: Move the mouse cursor on the screen to see the magic</span>
+  </div>
+</body>
+  <!--Canvas for fireworks animation-->
+  <canvas id="fireworksCanvas"></canvas>
+  <!--Info Button and Modal-->
+  <button id="infoButton" class="info-btn">i</button>
+  <div id="infoModal" class="info-modal">
+    <h3>📲 How to Install it on your Device</h3>
+    <p>
+      <strong class="phone-heading">For Phone:</strong><br>
+      1. Tap the ⋮ (three dots) on your browser<br>
+      2. Tap “Add to Home screen”<br>
+      3. Confirm to install
+    </p> 
+    <p>
+      <strong class="desktop-heading">For Desktop:</strong><br>
+      1. Click the install icon in the address bar if visible (usually looks like a monitor with a down arrow)<br>
+      OR<br>
+      1. Click on the ⋮ (three dots) in the top right<br>
+      2. Scroll down carefully<br>
+      3. Click on (Cast/Save/Share) option and click “Install Fireworks”
+    </p>
+    <div style="text-align:center;">
+      <button onclick="closeInfoModal()" class="close-btn">Close</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+<!--End of Program-->
